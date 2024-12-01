@@ -10,17 +10,47 @@
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/var.css">
+  <link rel="stylesheet" href="styles/navbar.css">
 </head>
 
-<body class="main-page">
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">A
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#step-into">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#exploring-cities">Cities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lore</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <div class="container-fluid px-0">
+
+    
     <!-- Hero Section -->
     <div id="hero" class="hader-container-lore position-relative text-center text-white w-100">
       <div class="container-fluid ">
         <div class="arcane-logo">
           <img src="assets/images/arcane-logo.svg" class="header-lore img-fluid" alt="Header Image">
         </div>
-        <button class="btn main-btn">Search</button>
+        <a class="btn main-btn" href="#step-into">Dive in</a>
       </div>
     </div>
 
@@ -30,7 +60,7 @@
     </div>
 
     <!-- Champions Section -->
-    <section class="champions-section-main text-center py-5 w-100">
+    <section id="step-into" class="champions-section-main text-center py-5 w-100">
       <div class="section-title-div">
         <h2 class="section-title">STEP INTO THE ARCANE</h2>
       </div>

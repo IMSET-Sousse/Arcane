@@ -1,0 +1,41 @@
+.navbar {
+    background: #ffffff41;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    height: 40px;
+    
+  }
+  
+  .navbar.fixed-top {
+    position: fixed;
+  }
+  
+
+  .navbar-brand{
+    color: var(--main-color);
+    font-family: "Arcane-Nine";
+    font-size:2.5rem;
+  }
+  .navbar-brand:visited{
+    color: var(--main-color);
+ 
+  }
+
+  .nav-link{
+    color: black;
+    font-family: "Arcane-Nine";
+    margin-right: 2rem;
+  }
+
+  .nav-link:visited{
+    color: black;
+    font-family: "Arcane-Nine";
+    margin-right: 2rem;
+  }
+
+  .nav-link:hover{
+    color: var(--main-color);
+  }

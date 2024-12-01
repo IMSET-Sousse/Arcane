@@ -1,19 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
 }
 
 @media only screen and (max-width: 340px) {
-    .main-page {
-        background: #000000;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        position: relative;
-    }
+
 
     .hader-container-lore {
         padding: 0px 10px 25vh 10px;
@@ -276,17 +276,6 @@ body {
 }
 
 
-.main-page {
-    background: #000000;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    position: relative;
-}
-
 .hader-container-lore {
     background-image: url(/arcane/assets/images/header-main.png);
     background-position: center;
@@ -328,6 +317,8 @@ body {
 }
 
 .main-btn {
+    font-family: "Arcane-Nine";
+    color: white;
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.46);
     border-style: solid;
@@ -344,6 +335,8 @@ body {
     height: 40px;
     position: relative;
     transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+    margin-bottom: 20%;
+
 }
 .main-btn:hover{
     background: var(--main-color);
