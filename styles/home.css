@@ -106,6 +106,7 @@ body {
     }
 
     .champions-section-main {
+        text-align: center;
         background: #000000;
         padding: 50px 0px 50px 0px;
         display: flex;
@@ -237,6 +238,41 @@ body {
 
     }
 }
+
+@media (max-width: 1200px) {
+    .cards-layout {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards-layout {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 280px;
+        height: 450px;
+    }
+
+    .cards-layout {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cards-layout {
+        gap: 10px;
+    }
+}
+
 
 .main-page {
     background: #000000;
@@ -450,18 +486,17 @@ body {
     overflow: hidden;
 }
 
-.characters-cards-main2 {
-    padding: 20px 0px 20px 0px;
+.chars-row {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+    justify-content: center;
+    gap: 20px;
+}
+
+.characters-cards-main2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .character-car-main2 {
@@ -475,9 +510,10 @@ body {
     align-items: center;
     justify-content: flex-end;
     flex-shrink: 0;
-    width: 320px;
     height: 508px;
     position: relative;
+    padding: 0;
+
 }
 
 .exploring-section {
@@ -630,4 +666,91 @@ body {
     justify-content: center;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+
+
+.cards-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 -15px;
+}
+
+.card {
+    background: black;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid 1px var(--main-color);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0;
+    transition: transform 0.2s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    background-image: url(/arcane/assets/images/ekko-card.png);
+    background-size: cover;
+    font-size: 1rem;
+    width: 320px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+    transform: scale(1.05);
+}
+
+
+.empty-space-card {
+    height: 100%;
+}
+
+.champ-name-and-city {
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    transition: bottom 0.4s ease;
+}
+
+.card:hover .champ-name-and-city {
+    bottom: 10px;
+}
+
+.card-text {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+.champ-name {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px var(--main-color);
+    height: 50px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+.city-name {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-top: solid 1px var(--main-color);
+    margin: 0;
+    color: var(--main-color);
 }
