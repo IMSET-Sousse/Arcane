@@ -1,10 +1,10 @@
+/* Styles For All Pages*/
+
 html {
     scroll-behavior: smooth;
     
   }
   
-
-
 @font-face {
     font-family: 'Arcane-Nine';
     src: url('/arcane/assets/fonts/Arcane-Nine.otf') format('truetype'); 
