@@ -3,197 +3,234 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Arcane Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/var.css">
 </head>
 
-<body>
-
-
-  <div class="main-page">
-    <!-- Header-->
-    <div class="hader-container-lore" id="hero" style="
-            background: url(hader-container-lore0.png) center;
-            background-size: cover;
-            background-repeat: no-repeat;
-          ">
-      <img class="header-lore" src="header-lore0.png" />
-      <button class="main-btn">
-        <a class="main-btn-text">Search</a>
-      </button>
+<body class="main-page">
+  <div class="container-fluid px-0">
+    <!-- Hero Section -->
+    <div id="hero" class="hader-container-lore position-relative text-center text-white w-100">
+      <div class="container-fluid ">
+        <div class="arcane-logo">
+          <img src="assets/images/arcane-logo.svg" class="header-lore img-fluid" alt="Header Image">
+        </div>
+        <button class="btn main-btn">Search</button>
+      </div>
     </div>
 
-    <div class="devider-section-container-down">
-      <img class="devider-img" src="assets/images/devider-img.png" />
-    </div>
-    <div class="devider-section-container-up">
-      <img class="devider-img2" src="assets/images/devider-img.png" />
+    <!-- Divider -->
+    <div class="devider-section-container-down w-100">
+      <img src="assets/images/devider-img.png" class="devider-img img-fluid w-100" alt="Divider">
     </div>
 
-    <!-- Step into arcane section-->
-    <div class="champions-section-main">
+    <!-- Champions Section -->
+    <section class="champions-section-main text-center py-5 w-100">
       <div class="section-title-div">
-        <div class="section-title arcane-font">Step into the wold of arcane</div>
+        <h2 class="section-title arcane-font">Step into the wold of arcane</h2>
       </div>
-      <div class="characters-cards-main">
-        <div class="character-car-main">
-          <div class="character-name">
-            <div class="champion-name">Vi</div>
+
+      <div class="characters-cards-main container-fluid px-4">
+        <div class="row justify-content-center g-4">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="character-car-main">
+              <div class="character-name">
+                <span class="champion-name">Vi</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="character-car-main">
+              <div class="character-name">
+                <span class="champion-name">Vi</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="character-car-main">
-          <div class="character-name">
-            <div class="champion-name">Vi</div>
-          </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
-          </div>
-        </div>
-        <div class="character-car-main">
-          <div class="character-name">
-            <div class="champion-name">Vi</div>
-          </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="character-car-main">
+              <div class="character-name">
+                <span class="champion-name">Vi</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="devider-section-container-up w-100">
+      <img src="assets/images/devider-img.png" class="devider-img2 img-fluid w-100" alt="Divider">
     </div>
 
-    <div class="devider-section-container-up">
-      <img class="devider-img2" src="assets/images/devider-img.png" />
-    </div>
-
-    <!-- Champions section-->
-    <div class="champions-section-main">
+    <!-- Arcane Main Characters Section -->
+    <section class="champions-section-main text-center py-5 w-100">
       <div class="section-title-div">
-        <div class="section-title">ARCANE MAIN CHARACTERS</div>
+        <h2 class="section-title">ARCANE MAIN CHARACTERS</h2>
       </div>
-      <div class="characters-cards-main2">
-        <div class="character-car-main2">
-          <div class="character-name">
-            <div class="champion-name">Vi</div>
+
+      <div class="characters-cards-main2 container-fluid px-4">
+        <div class="row justify-content-center g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="character-car-main2">
+              <div class="character-name">
+                <span class="champion-name">Vi</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="character-car-main2">
+              <div class="character-name">
+                <span class="champion-name">Jinx</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="character-car-main2">
-          <div class="character-name">
-            <div class="champion-name">Jinx</div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="character-car-main2">
+              <div class="character-name">
+                <span class="champion-name">Ekko</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Zaun</span>
+              </div>
+            </div>
           </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="character-car-main2">
+              <div class="character-name">
+                <span class="champion-name">Jayce Talis</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Piltover</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="character-car-main2">
-          <div class="character-name">
-            <div class="champion-name">Ekko</div>
-          </div>
-          <div class="character-region">
-            <div class="champion-region">Zaun</div>
-          </div>
-        </div>
-        <div class="character-car-main2">
-          <div class="character-name">
-            <div class="champion-name">Jayce Talis</div>
-          </div>
-          <div class="character-region">
-            <div class="champion-region">Piltover</div>
-          </div>
-        </div>
-        <div class="character-car-main2">
-          <div class="character-name">
-            <div class="champion-name">Victor</div>
-          </div>
-          <div class="character-region">
-            <div class="champion-region">Piltover</div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="character-car-main2">
+              <div class="character-name">
+                <span class="champion-name">Victor</span>
+              </div>
+              <div class="character-region">
+                <span class="champion-region">Piltover</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="devider-section-container-down w-100">
+      <img src="assets/images/devider-img.png" class="devider-img img-fluid w-100" alt="Divider">
     </div>
 
-    <div class="devider-section-container-down">
-      <img class="devider-img" src="assets/images/devider-img.png" />
-    </div>
-
-    <!-- Cities section-->
-    <div class="exploring-section">
+    <!-- Exploring Cities Section -->
+    <section class="exploring-section text-center py-5 w-100">
       <div class="section-title-div">
-        <div class="section-title">Explore OTHER CITIES</div>
+        <h2 class="section-title">Explore OTHER CITIES</h2>
       </div>
-      <div class="exploring-cards">
-        <div class="exploring-card">
-          <div class="exploring-card-title">
-            <div class="explorig-title-card">Noxus</div>
+
+      <div class="exploring-cards container-fluid px-4">
+        <div class="row justify-content-center g-4">
+          <div class="col-12 col-md-4">
+            <div class="exploring-card">
+              <div class="exploring-card-title">
+                <span class="explorig-title-card">Noxus</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="exploring-card">
-          <div class="exploring-card-title">
-            <div class="explorig-title-card">Zaun</div>
+          <div class="col-12 col-md-4">
+            <div class="exploring-card">
+              <div class="exploring-card-title">
+                <span class="explorig-title-card">Zaun</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="exploring-card">
-          <div class="exploring-card-title">
-            <div class="explorig-title-card">Piltover</div>
+          <div class="col-12 col-md-4">
+            <div class="exploring-card">
+              <div class="exploring-card-title">
+                <span class="explorig-title-card">Piltover</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="devider-section-container-up w-100">
+      <img src="assets/images/devider-img.png" class="devider-img2 img-fluid w-100" alt="Divider">
     </div>
 
-    <div class="devider-section-container-up">
-      <img class="devider-img2" src="assets/images/devider-img.png" />
-    </div>
-
-    <!-- Seasons section-->
-    <div class="arcane-seasons-section">
+    <!-- Arcane Seasons Section -->
+    <section class="arcane-seasons-section text-center py-5 w-100">
       <div class="section-title-div">
-        <div class="section-title">the saga of arcane</div>
+        <h2 class="section-title">the saga of arcane</h2>
       </div>
-      <div class="seasons-cards">
-        <div class="seasons-card">
-          <div class="seasons-card-title">
-            <div class="seasons-title">Season 1</div>
+
+      <div class="seasons-cards container-fluid px-4">
+        <div class="row justify-content-center g-4">
+          <div class="col-12 col-md-6">
+            <div class="seasons-card">
+              <div class="seasons-card-title">
+                <span class="seasons-title">Season 1</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="seasons-card">
+              <div class="seasons-card-title">
+                <span class="seasons-title">Season 2</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="seasons-card">
-          <div class="seasons-card-title">
-            <div class="seasons-title">Season 2</div>
-          </div>
-        </div>
       </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="devider-section-container-down w-100">
+      <img src="assets/images/devider-img.png" class="devider-img img-fluid w-100" alt="Divider">
     </div>
 
-    <div class="devider-section-container-up">
-      <img class="devider-img2" src="assets/images/devider-img.png" />
-    </div>
-    <div class="devider-section-container-down">
-      <img class="devider-img" src="assets/images/devider-img.png" />
-    </div>
-
-    <!-- Footer section-->
-    <div class="footer">
+    <!-- Footer -->
+    <!-- <footer class="footer text-center py-4 w-100">
       <div class="footer-logo">
-        <a class="a-logo">A</a>
+        <span class="a-logo">A</span>
       </div>
-      <div class="footer-nav">
-        <a class="footer-link" href="#">Home</a>
-        <a class="footer-link" href="#">Characters</a>
-        <a class="footer-link" href="#">Cities</a>
-        <a class="footer-link" href="#">Lore</a>
-        <a class="footer-link" href="#">Episodes</a>
-      </div>
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">Home</a>
+        <a href="#" class="footer-link">Characters</a>
+        <a href="#" class="footer-link">Cities</a>
+        <a href="#" class="footer-link">Lore</a>
+        <a href="#" class="footer-link">Episodes</a>
+      </nav>
       <div class="footer-copyrights-section">
-        <p class="copyrights">all rights reserved to @riot games</p>
+        <span>all rights reserved to @riot games</span>
       </div>
-    </div>
-  </div>
+    </footer>
+  </div> -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,9 @@
 html {
     scroll-behavior: smooth;
+    
   }
   
 
-:root{
-    --section-title: #ffffff
-}
 
 @font-face {
     font-family: 'Arcane-Nine';
