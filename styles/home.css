@@ -719,7 +719,7 @@ body {
 .champ-name-and-city {
     width: 100%;
     position: absolute;
-    bottom: -60px;
+    bottom: -120px;
     transition: bottom 0.4s ease;
 }
 
@@ -753,4 +753,33 @@ body {
     border-top: solid 1px var(--main-color);
     margin: 0;
     color: var(--main-color);
+}
+
+
+
+.card-links-main {
+    width: 100%;
+    position: relative;
+}
+
+.card:hover .card-link-main {
+    bottom: -20px;
+}
+
+.card-link-main {
+    font-family: "Arcane-Nine";
+    font-size: 1.5rem;
+    border-top: solid 1px var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: -500px;
+    height: 500px;
+    color: white;
+    background-color: #000000b9;
+    transition: bottom 0.4s ease;
+    backdrop-filter: blur(2px);
+
 }
