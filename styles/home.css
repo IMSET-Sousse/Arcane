@@ -1,0 +1,417 @@
+
+
+body {
+    margin: 0;
+    padding: 0  ;
+}
+
+
+.main-page,
+.main-page * {
+  box-sizing: border-box;
+}
+.main-page {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 340px;
+    position: relative;
+}
+
+.hader-container-lore {
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 89.51385617256165%);
+    padding: 100px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    min-height: 850px;
+    max-height: 850px;
+    position: relative;
+}
+
+.header-lore {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 251px;
+    position: relative;
+    object-fit: cover;
+}
+
+.main-btn {
+    background: rgba(0, 0, 0, 0.46);
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0;
+    height: 40px;
+    min-width: 100px;
+    max-width: 200px;
+    max-height: 40px;
+    position: relative;
+}
+
+.main-btn-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    flex: 1;
+    max-width: 1140px;
+}
+
+.devider-section-container-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 100px;
+    max-height: 100px;
+    position: relative;
+}
+
+.devider-img {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 50px;
+    position: relative;
+    object-fit: cover;
+}
+
+.devider-section-container-up {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 100px;
+    max-height: 100px;
+    position: relative;
+}
+
+.devider-img2 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 50px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, -1);
+    object-fit: cover;
+}
+
+.champions-section-main {
+    background: #000000;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+
+.characters-cards-main {
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.character-car-main {
+    background: #414141;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    height: 508px;
+    min-width: 300px;
+    position: relative;
+}
+
+.character-name {
+    background: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px 0px 1px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    max-height: 50px;
+    position: relative;
+}
+
+.champion-name {
+    color: #8f6848;
+    text-align: center;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 19.104751586914062px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.character-region {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    max-height: 100px;
+    position: relative;
+}
+
+.champion-region {
+    color: #8f6848;
+    text-align: center;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 19.104751586914062px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.characters-cards-main2 {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.character-car-main2 {
+    background: #414141;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 320px;
+    height: 508px;
+    position: relative;
+}
+
+.exploring-section {
+    background: #000000;
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.exploring-cards {
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.exploring-card {
+    background: #414141;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    height: 508px;
+    min-width: 320px;
+    max-width: 750px;
+    position: relative;
+}
+
+.exploring-card-title {
+    background: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    max-height: 100px;
+    position: relative;
+}
+
+.explorig-title-card {
+    color: #8f6848;
+    text-align: center;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 19.104751586914062px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.arcane-seasons-section {
+    background: #000000;
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.seasons-cards {
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.seasons-card {
+    background: #414141;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    height: 508px;
+    min-width: 320px;
+    max-width: 750px;
+    position: relative;
+}
+
+.seasons-card-title {
+    background: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    max-height: 100px;
+    position: relative;
+}
+
+.seasons-title {
+    color: #8f6848;
+    text-align: center;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 19.104751586914062px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
