@@ -734,9 +734,43 @@ body {
     transform: translateY(-10px);
 }
 
+.chars-link-card{
+    background-image: url(/assets/images/chars-card.png);
+}
+
+.city-link-card{
+    background-image: url(/assets/images/city-card.png);
+}
+
+.lore-link-card{
+    background-image: url(/assets/images/lore-card.png);
+}
+
+.vi-champ{
+    background-image: url(/assets/images/champs/vi-card.png); 
+}
+
+.jinx-champ{
+    background-image: url(/assets/images/champs/jinx-card.png); 
+}
+
+.ekko-champ{
+    background-image: url(/assets/images/champs/ekko-card.png); 
+}
+
+.jayce-champ{
+    background-image: url(/assets/images/champs/jayce-card.png); 
+}
+
+.victor-champ{
+    background-image: url(/assets/images/champs/victor-card.png); 
+}
+
+.cait-champ{
+    background-image: url(/assets/images/champs/cait-card.png); 
+}
+
 .card-body {
-    background-image: url(/assets/images/ekko-card.png);
-    background-size: cover;
     font-size: 1rem;
     width: 320px;
     padding: 0;
