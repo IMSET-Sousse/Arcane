@@ -7,7 +7,7 @@ html {
   
 @font-face {
     font-family: 'Arcane-Nine';
-    src: url('/arcane/assets/fonts/Arcane-Nine.otf') format('truetype'); 
+    src: url('/assets/fonts/Arcane-Nine.otf') format('truetype'); 
 }
 
 /*---- Section title ----*/

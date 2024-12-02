@@ -277,7 +277,7 @@ body {
 
 
 .hader-container-lore {
-    background-image: url(/arcane/assets/images/header-main.png);
+    background-image: url(/assets/images/header-main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,7 +335,6 @@ body {
     height: 40px;
     position: relative;
     transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
-    margin-bottom: 20%;
 
 }
 .main-btn:hover{
@@ -399,7 +398,7 @@ body {
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 
@@ -708,7 +707,7 @@ body {
 }
 
 .card-body {
-    background-image: url(/arcane/assets/images/ekko-card.png);
+    background-image: url(/assets/images/ekko-card.png);
     background-size: cover;
     font-size: 1rem;
     width: 320px;

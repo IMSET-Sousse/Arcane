@@ -1,41 +1,103 @@
 .navbar {
-    background: #ffffff41;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; 
-    height: 40px;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem 2rem;
+  font-family: var(--main-font);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: solid 1px transparent;
+  border-image: linear-gradient(
+      90deg,
+      rgba(143, 104, 72, 0) 0%,
+      rgba(143, 104, 72, 1) 50%,
+      rgba(143, 104, 72, 0) 100%
+  ) 1;
+  border-image-slice: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.navbar-nav {
+  gap: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--main-color) !important;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(0.94);
+
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  color: var(--text-white) !important;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(0.94);
+  color: var(--main-color) !important;
+}
+
+.navbar-toggler {
+  align-self: flex-end;
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.toggle-icon {
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 6px 0;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+  .navbar {
+    box-shadow: 0px 0px 20px var(--black);
+
+  }
+
+  .navbar-collapse {
+    background-color: inherit;
+    padding: 1rem;
+    margin-top: 1rem;
     
   }
-  
-  .navbar.fixed-top {
-    position: fixed;
-  }
-  
 
-  .navbar-brand{
-    color: var(--main-color);
-    font-family: "Arcane-Nine";
-    font-size:2.5rem;
-  }
-  .navbar-brand:visited{
-    color: var(--main-color);
- 
+  .navbar-nav {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
   }
 
-  .nav-link{
-    color: black;
-    font-family: "Arcane-Nine";
-    margin-right: 2rem;
-  }
-
-  .nav-link:visited{
-    color: black;
-    font-family: "Arcane-Nine";
-    margin-right: 2rem;
-  }
-
-  .nav-link:hover{
-    color: var(--main-color);
-  }
+}
