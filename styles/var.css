@@ -1,6 +1,11 @@
 :root{
-    --main-color: #8F6848;
+    --bg-color:#0A0A0C;
+    --main-color: #927345;
+    --secondary-color:#ffac67;
     --section-title: #ffffff;
     --text-white:#ffffff;
-    --main-font: 'Arcane-Nine'
+    --main-font: 'Arcane-Nine';
+    --second-font-R:'Beaufort-R';
+    --second-font-M:'Beaufort-M';
+    --second-font-B:'Beaufort-B';
 }

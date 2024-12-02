@@ -9,6 +9,20 @@ html {
     font-family: 'Arcane-Nine';
     src: url('/assets/fonts/Arcane-Nine.otf') format('truetype'); 
 }
+@font-face {
+    font-family: 'Beaufort-R';
+    src: url('/assets/fonts/BeaufortforLOL-Regular.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'Beaufort-B';
+    src: url('/assets/fonts/BeaufortforLOL-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Beaufort-M';
+    src: url('/assets/fonts/BeaufortforLOL-Medium.ttf') format('truetype'); 
+}
+
 
 /*---- Section title ----*/
 .section-title-div {
@@ -65,7 +79,9 @@ html {
 }
 
 .a-logo {
-    color: #ffac67;
+    cursor: pointer;
+    text-decoration: none;
+    color:var(--secondary-color);
     text-align: center;
     font-family: "Arcane-Nine", sans-serif;
     font-size: 64px;
@@ -76,6 +92,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.a-logo:hover{
+    transform: scale(0.9);
 }
 
 .footer-nav {
@@ -90,8 +111,8 @@ html {
     height: 70px;
     position: relative;
 }
-
-.footer-link {
+.footer-nav a{
+    text-decoration: none;
     color: #ffffff;
     text-align: center;
     font-family: "Arcane-Nine", sans-serif;
@@ -103,8 +124,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
+}
 .footer-copyrights-section {
     padding: 20px;
     display: flex;

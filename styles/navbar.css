@@ -33,18 +33,6 @@
   flex-direction: row;
 }
 
-.navbar-brand {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  color: var(--main-color) !important;
-  transition: transform 0.3s ease-out;
-}
-
-.navbar-brand:hover {
-  transform: scale(0.94);
-
-}
-
 .nav-link {
   font-size: 1.2rem;
   margin: 0 0.5rem;
@@ -54,7 +42,7 @@
 
 .nav-link:hover {
   transform: scale(0.94);
-  color: var(--main-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .navbar-toggler {
@@ -70,7 +58,7 @@
 .toggle-icon {
   width: 30px;
   height: 3px;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   margin: 6px 0;
   display: block;
   transition: 0.3s;

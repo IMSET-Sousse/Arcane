@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-    background: #000000;
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -60,7 +60,7 @@ body {
         position: relative;
     }
 
-    
+
 
     .devider-section-container-down {
         display: flex;
@@ -108,7 +108,6 @@ body {
 
     .champions-section-main {
         text-align: center;
-        background: #000000;
         padding: 50px 0px 50px 0px;
         display: flex;
         flex-direction: column;
@@ -135,9 +134,8 @@ body {
     }
 
     .character-car-main {
-        background: #414141;
         border-style: solid;
-        border-color: #8f6848;
+        border-color: #927345;
         border-width: 1px;
         display: flex;
         flex-direction: column;
@@ -153,7 +151,7 @@ body {
     .character-name {
         background: rgba(0, 0, 0, 0.4);
         border-style: solid;
-        border-color: #8f6848;
+        border-color: #927345;
         border-width: 1px 0px 1px 0px;
         display: flex;
         flex-direction: row;
@@ -167,9 +165,9 @@ body {
     }
 
     .champion-name {
-        color: #8f6848;
+        color: #927345;
         text-align: center;
-        font-family: "Montserrat-Regular", sans-serif;
+        font-family: var(--second-font-M);
         font-size: 19.104751586914062px;
         font-weight: 400;
         position: relative;
@@ -196,9 +194,9 @@ body {
     }
 
     .champion-region {
-        color: #8f6848;
+        color: #927345;
         text-align: center;
-        font-family: "Montserrat-Regular", sans-serif;
+        font-family: var(--second-font-M);
         font-size: 19.104751586914062px;
         font-weight: 400;
         position: relative;
@@ -228,7 +226,7 @@ body {
     .character-car-main2 {
         background: #414141;
         border-style: solid;
-        border-color: #8f6848;
+        border-color: #927345;
         border-width: 1px;
         display: flex;
         flex-direction: column;
@@ -250,6 +248,10 @@ body {
     .cards-layout {
         gap: 20px;
     }
+
+    .city-card-home {
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -261,10 +263,24 @@ body {
     .cards-layout {
         gap: 15px;
     }
+
+    .exploring-cards {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .exploring-card {
+        flex: 1 0 100%;
+        height: auto;
+        min-width: 0;
+    }
+
+    .city-card-home {
+        max-height: 300px;
+    }
 }
 
 @media (max-width: 576px) {
-    
+
     .card {
         max-width: 100%;
         margin-bottom: 20px;
@@ -272,6 +288,10 @@ body {
 
     .cards-layout {
         gap: 10px;
+    }
+
+    .city-card-home {
+        max-height: 119px;
     }
 }
 
@@ -300,7 +320,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
-    
+
 }
 
 .header-lore {
@@ -309,6 +329,7 @@ body {
     justify-content: center;
     height: 251px;
 }
+
 .container-fluid {
     display: flex;
     justify-content: center;
@@ -337,7 +358,8 @@ body {
     transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
 
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background: var(--main-color);
     transform: scale(1.02);
 }
@@ -388,7 +410,6 @@ body {
 }
 
 .champions-section-main {
-    background: #000000;
     padding: 50px 0px 50px 0px;
     display: flex;
     flex-direction: column;
@@ -420,7 +441,7 @@ body {
 .character-car-main {
     background: #414141;
     border-style: solid;
-    border-color: #8f6848;
+    border-color: #927345;
     border-width: 1px;
     display: flex;
     flex-direction: column;
@@ -436,7 +457,7 @@ body {
 .character-name {
     background: rgba(0, 0, 0, 0.4);
     border-style: solid;
-    border-color: #8f6848;
+    border-color: #927345;
     border-width: 1px 0px 1px 0px;
     display: flex;
     flex-direction: row;
@@ -450,9 +471,9 @@ body {
 }
 
 .champion-name {
-    color: #8f6848;
+    color: #927345;
     text-align: center;
-    font-family: "Montserrat-Regular", sans-serif;
+    font-family: var(--second-font-M);
     font-size: 19.104751586914062px;
     font-weight: 400;
     position: relative;
@@ -479,9 +500,9 @@ body {
 }
 
 .champion-region {
-    color: #8f6848;
+    color: #927345;
     text-align: center;
-    font-family: "Montserrat-Regular", sans-serif;
+    font-family: var(--second-font-M);
     font-size: 19.104751586914062px;
     font-weight: 400;
     position: relative;
@@ -510,7 +531,7 @@ body {
 .character-car-main2 {
     background: #414141;
     border-style: solid;
-    border-color: #8f6848;
+    border-color: #927345;
     border-width: 1px;
     display: flex;
     flex-direction: column;
@@ -525,7 +546,6 @@ body {
 }
 
 .exploring-section {
-    background: #000000;
     padding: 50px 10px 50px 10px;
     display: flex;
     flex-direction: column;
@@ -549,13 +569,16 @@ body {
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+    width: 100%;
 }
 
 .exploring-card {
+    cursor: pointer;
+    overflow: hidden;
     background: #414141;
     border-style: solid;
-    border-color: #8f6848;
-    border-width: 1px;
+    border-color: #927345;
+    border-width: 2px;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -563,15 +586,22 @@ body {
     justify-content: flex-end;
     flex: 1;
     height: 508px;
-    min-width: 320px;
-    max-width: 750px;
+    min-width: 300px;
+    max-width: 100%;
     position: relative;
+}
+
+
+.zaun {
+    background-image: url(/assets/videos/);
+    background-position: center;
+    background-size: cover;
 }
 
 .exploring-card-title {
     background: rgba(0, 0, 0, 0.5);
     border-style: solid;
-    border-color: #8f6848;
+    border-color: #927345;
     border-width: 1px 0px 0px 0px;
     display: flex;
     flex-direction: row;
@@ -584,10 +614,11 @@ body {
     position: relative;
 }
 
+
 .explorig-title-card {
-    color: #8f6848;
+    color: #927345;
     text-align: center;
-    font-family: "Montserrat-Regular", sans-serif;
+    font-family: var(--second-font-M);
     font-size: 19.104751586914062px;
     font-weight: 400;
     position: relative;
@@ -601,7 +632,6 @@ body {
 }
 
 .arcane-seasons-section {
-    background: #000000;
     padding: 50px 10px 50px 10px;
     display: flex;
     flex-direction: column;
@@ -625,13 +655,11 @@ body {
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .seasons-card {
-    background: #414141;
-    border-style: solid;
-    border-color: #8f6848;
-    border-width: 1px;
+    border: solid 2px var(--main-color);
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -647,7 +675,7 @@ body {
 .seasons-card-title {
     background: rgba(0, 0, 0, 0.5);
     border-style: solid;
-    border-color: #8f6848;
+    border-color: #927345;
     border-width: 1px 0px 0px 0px;
     display: flex;
     flex-direction: row;
@@ -661,11 +689,10 @@ body {
 }
 
 .seasons-title {
-    color: #8f6848;
+    color: #927345;
     text-align: center;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 19.104751586914062px;
-    font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 2rem;
     position: relative;
     align-self: stretch;
     flex: 1;
@@ -687,7 +714,7 @@ body {
 }
 
 .card {
-    background: black;
+    background: var(--bg-color);
     cursor: pointer;
     overflow: hidden;
     border: solid 1px var(--main-color);
@@ -697,12 +724,13 @@ body {
     flex-direction: column;
     position: relative;
     border-radius: 0;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, border 0.2s ease-in;
     margin: 0;
     padding: 0;
 }
 
 .card:hover {
+    border: solid 1px var(--main-color);
     transform: translateY(-10px);
 }
 
@@ -738,21 +766,29 @@ body {
 .card-text {
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.808);
 }
 
 .champ-name {
+    font-family: var(--second-font-M);
+    background-color: rgba(0, 0, 0, 0.808);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: solid 1px var(--main-color);
+    border-top: solid 1px #927345;
     height: 50px;
     margin: 0;
     color: var(--main-color);
 }
 
+.champ-name:hover {
+    background-color: var(--main-color);
+    color: #000000;
+}
+
 .city-name {
+    font-family: var(--second-font-B);
+    font-size: 1.2rem;
     background-color: black;
     display: flex;
     align-items: center;
@@ -775,7 +811,7 @@ body {
 }
 
 .card-link-main {
-    font-family: "Arcane-Nine";
+    font-family: var(--main-font);
     font-size: 1.5rem;
     border-top: solid 1px var(--main-color);
     display: flex;
@@ -790,4 +826,108 @@ body {
     transition: bottom 0.4s ease;
     backdrop-filter: blur(2px);
 
+}
+
+
+
+
+.city-card-home {
+    background-color: #000000;
+    outline: solid 1px transparent;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 500px;
+    min-width: 320px;
+    width: 90vw;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: none;
+    transition: outline 0.2s ease-in-out;
+}
+
+.city-card-home:hover {
+    outline: solid 2px var(--main-color);
+}
+
+.city-name-div {
+    background: rgba(0, 0, 0, 0.54);
+    border-style: solid;
+    border-color: #927345;
+    border-width: 1px 0px 0px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 70px;
+    position: relative;
+    width: 100%;
+    bottom: -70px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.city-card-home:hover .city-name-div {
+    transform: translateY(-70px);
+}
+
+.city-card-home p {
+    padding-top: 10px;
+    font-family: var(--main-font);
+    font-size: 2rem;
+
+}
+
+.city-name-home {
+    color: #ffffff;
+    text-align: center;
+    font-family: "ArcaneNine-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-video {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+}
+
+.card-video-noxus {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+}
+
+.season1 {
+    cursor: pointer;
+    background: url(/assets/images/season1.png) center / cover no-repeat;
+    transition: transform 0.2s ease-in-out;
+}
+.season2 {
+    cursor: pointer;
+    background: url(/assets/images/season2.png) center / cover no-repeat;
+    transition: transform 0.2s ease-in-out;
+}
+
+.season1:hover,
+.season2:hover {
+    transform: scale(1.05);
 }
