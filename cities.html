@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Arcane Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/var.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+</head>
+
+<body>
+
+  <div class="container-fluid px-0">
+    <!--Navbar-->
+      <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="characters.html">CHARACTERS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cities.html">CITIES</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="lore.html">LORE</a>
+                      </li>
+                  
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+    <!-- Hero Section -->
+    <div id="hero" class="hader-container-lore position-relative text-center text-white w-100" style="background-image: url(/assets/images/CITIES.png);">
+      <div class="container-fluid ">
+        <div class="header-title-lore">Arcane Cities</div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div id="step-into" class="devider-section-container-down w-100">
+      <img src="assets/images/devider-img.png" class="devider-img img-fluid w-100" alt="Divider">
+    </div>
+    <!-- Divider -->
+    <div class="devider-section-container-up w-100">
+      <img src="assets/images/devider-img.png" class="devider-img2 img-fluid w-100" alt="Divider">
+    </div>
+
+
+   <!-- Exploring Cities Section -->
+   <section class=" exploring-section text-center py-5 w-100">
+    <div class="section-title-div">
+      <h2 class="section-title">Explore OTHER CITIES</h2>
+    </div>
+
+    <div class="exploring-cards container-fluid px-4">
+      <div class="row justify-content-center g-4 cities-container">
+          <div class="piltover-card city-card-home" onclick="window.location.href = 'piltover.html';">
+            <div class="city-name-div">
+              <div class="city-name-home"><p>PILTOVER</p></div>
+            </div>
+            <video class="card-video" src="assets/videos/piltover.webm" autoplay muted loop></video>
+          </div>
+          <div class="zaun-card city-card-home" onclick="window.location.href = 'zaun.html';">
+            <div class="city-name-div">
+              <div class="city-name-home"><p>ZAUN</p></div>
+            </div>
+            <video class="card-video" src="assets/videos/zaun.webm" autoplay muted loop></video>
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Divider -->
+    <div class="devider-section-container-down w-100">
+      <img src="assets/images/devider-img.png" class="devider-img img-fluid w-100" alt="Divider">
+    </div>
+    <!-- Divider -->
+    <div class="devider-section-container-up w-100">
+      <img src="assets/images/devider-img.png" class="devider-img2 img-fluid w-100" alt="Divider">
+    </div>
+    <!-- Footer -->
+    <footer class="footer text-center py-4 w-100">
+      <div class="footer-logo">
+        <a class="a-logo" href="#hero">A</a>
+      </div>
+      <nav class="footer-nav">
+        <a href="home.html">Home</a>
+        <a href="#">Characters</a>
+        <a href="#">Cities</a>
+        <a href="#">Lore</a>
+      </nav>
+      <div class="footer-copyrights-section">
+        <span>all rights reserved to @riot games</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

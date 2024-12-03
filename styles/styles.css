@@ -2,17 +2,19 @@
 
 html {
     scroll-behavior: smooth;
-    
-  }
-  
+
+}
+
 @font-face {
     font-family: 'Arcane-Nine';
-    src: url('/assets/fonts/Arcane-Nine.otf') format('truetype'); 
+    src: url('/assets/fonts/Arcane-Nine.otf') format('truetype');
 }
+
 @font-face {
     font-family: 'Beaufort-R';
-    src: url('/assets/fonts/BeaufortforLOL-Regular.ttf') format('truetype'); 
+    src: url('/assets/fonts/BeaufortforLOL-Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Beaufort-B';
     src: url('/assets/fonts/BeaufortforLOL-Bold.ttf') format('truetype');
@@ -20,7 +22,7 @@ html {
 
 @font-face {
     font-family: 'Beaufort-M';
-    src: url('/assets/fonts/BeaufortforLOL-Medium.ttf') format('truetype'); 
+    src: url('/assets/fonts/BeaufortforLOL-Medium.ttf') format('truetype');
 }
 
 
@@ -31,20 +33,22 @@ html {
     gap: 10px;
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
     position: relative;
     flex-shrink: 0;
 }
 
 .section-title {
-    color: var(--section-title);
+    color: rgb(103, 71, 31);
+    background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98)) text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-family: "Arcane-Nine", sans-serif;
     font-size: 36px;
     font-weight: 400;
     height: 45px;
     position: relative;
-    flex: 0 1 auto; 
+    flex: 0 1 auto;
 }
 
 
@@ -81,7 +85,7 @@ html {
 .a-logo {
     cursor: pointer;
     text-decoration: none;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     text-align: center;
     font-family: "Arcane-Nine", sans-serif;
     font-size: 64px;
@@ -95,7 +99,7 @@ html {
     transition: transform 0.2s ease-in-out;
 }
 
-.a-logo:hover{
+.a-logo:hover {
     transform: scale(0.9);
 }
 
@@ -111,7 +115,8 @@ html {
     height: 70px;
     position: relative;
 }
-.footer-nav a{
+
+.footer-nav a {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
@@ -126,6 +131,7 @@ html {
     justify-content: center;
 
 }
+
 .footer-copyrights-section {
     padding: 20px;
     display: flex;
@@ -198,3 +204,30 @@ html {
     transform: rotate(0deg) scale(1, -1);
     object-fit: cover;
 }
+
+.lore-p {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--second-font-R);
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 1100px;
+  }
+
+  .city-disc-class{
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  
+.highlighted {
+    color: var(--main-color);
+    font-family: var(--second-font-B);
+    cursor: pointer;
+  }
+  

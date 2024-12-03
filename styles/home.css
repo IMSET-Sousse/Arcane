@@ -919,3 +919,15 @@ body {
 .season2:hover {
     transform: scale(1.05);
 }
+
+.header-title-lore {
+    color: rgb(103, 71, 31);
+    background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98)) text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 95px;
+    font-weight: 400;
+    position: relative;
+  }
+  
