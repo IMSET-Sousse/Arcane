@@ -1,13 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-
     background: var(--bg-color);
-    display: flex;
-    flex-direction: column;
     gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
     width: 100%;
     position: relative;
 }
@@ -365,49 +360,7 @@ body {
 }
 
 
-.devider-section-container-down {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 100px;
-    max-height: 100px;
-    position: relative;
-}
 
-.devider-img {
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 50px;
-    position: relative;
-    object-fit: cover;
-}
-
-.devider-section-container-up {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 100px;
-    max-height: 100px;
-    position: relative;
-}
-
-.devider-img2 {
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 50px;
-    position: relative;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, -1);
-    object-fit: cover;
-}
 
 .champions-section-main {
     padding: 50px 0px 50px 0px;
@@ -859,7 +812,12 @@ body {
     background-color: #000000b9;
     transition: bottom 0.4s ease;
     backdrop-filter: blur(2px);
+    text-decoration: none;
 
+}
+.card-link-main:visited,
+.card-link-main:hover {
+    text-decoration: none;  
 }
 
 
@@ -867,7 +825,7 @@ body {
 
 .city-card-home {
     background-color: #000000;
-    outline: solid 1px transparent;
+    outline: solid 1px var(--main-color);
     position: relative;
     cursor: pointer;
     background: transparent;
@@ -885,12 +843,8 @@ body {
     overflow: hidden;
     padding: 0;
     box-shadow: none;
-    transition: outline 0.2s ease-in-out;
 }
 
-.city-card-home:hover {
-    outline: solid 2px var(--main-color);
-}
 
 .city-name-div {
     background: rgba(0, 0, 0, 0.54);
@@ -926,7 +880,7 @@ body {
 .city-name-home {
     color: #ffffff;
     text-align: center;
-    font-family: "ArcaneNine-Regular", sans-serif;
+    font-family: var(--main-font);
     font-size: 12px;
     font-weight: 400;
     position: relative;

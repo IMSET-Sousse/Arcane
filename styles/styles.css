@@ -153,3 +153,48 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+
+.devider-section-container-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 100px;
+    max-height: 100px;
+    position: relative;
+}
+
+.devider-img {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 50px;
+    position: relative;
+    object-fit: cover;
+}
+
+.devider-section-container-up {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 100px;
+    max-height: 100px;
+    position: relative;
+}
+
+.devider-img2 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 50px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, -1);
+    object-fit: cover;
+}

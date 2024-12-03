@@ -17,34 +17,32 @@
 
   <div class="container-fluid px-0">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <div class="toggle-icon"></div>
-          <div class="toggle-icon"></div>
-          <div class="toggle-icon"></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="characters.html">CHARACTERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cities.html">CITIES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="lore.html">LORE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="episodes.html">EPISODES</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="characters.html">CHARACTERS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cities.html">CITIES</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="lore.html">LORE</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="episodes.html">EPISODES</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
 
     <!-- Hero Section -->
@@ -77,7 +75,7 @@
             <div class="card character-car-main2">
               <div class="card-body chars-link-card">
                 <div class="champ-name-and-city">
-                  <p class="card-link-main">Meet the Characters</p>
+                  <a class="card-link-main" style="text-decoration:none ;" href="characters.html">Meet the Characters</a>
                 </div>
               </div>
             </div>
@@ -87,7 +85,7 @@
             <div class="card character-car-main2">
               <div class="card-body city-link-card">
                 <div class="champ-name-and-city">
-                  <p class="card-link-main">Explore the Cities</p>
+                  <a class="card-link-main" style="text-decoration:none ;" href="cities.html">Explore the Cities</a>
                 </div>
               </div>
             </div>
@@ -97,7 +95,7 @@
             <div class="card character-car-main2">
               <div class="card-body lore-link-card">
                 <div class="champ-name-and-city">
-                  <p class="card-link-main">Discover the Lore</p>
+                  <a class="card-link-main" style="text-decoration:none ;" href="lore.html">Discover the Lore</a>
                 </div>
               </div>
             </div>
@@ -122,9 +120,9 @@
         <div class="chars-row ">
           <div>
             <div class="card character-car-main2">
-              <div class="card-body vi-champ">
+              <div class="card-body vi-champ" onclick="window.location.href = 'vi.html';">
                 <div class="champ-name-and-city">
-                  <p class="card-text champ-name">Vi</p>
+                  <a class="card-text champ-name"  style="text-decoration: none;">Vi</a>
                   <p class="card-text city-name">Zaun</p>
                 </div>
               </div>
@@ -133,7 +131,7 @@
 
           <div>
             <div class="card character-car-main2">
-              <div class="card-body jinx-champ">
+              <div class="card-body jinx-champ" onclick="window.location.href = 'jinx.html';">
                 <div class="champ-name-and-city">
                   <p class="card-text champ-name">Jinx</p>
                   <p class="card-text city-name">Zaun</p>
@@ -144,7 +142,7 @@
 
           <div>
             <div class="card character-car-main2">
-              <div class="card-body ekko-champ">
+              <div class="card-body ekko-champ" onclick="window.location.href = 'ekko.html';">
                 <div class="champ-name-and-city">
                   <p class="card-text champ-name">Ekko</p>
                   <p class="card-text city-name">Zaun</p>
@@ -155,7 +153,7 @@
 
           <div>
             <div class="card character-car-main2">
-              <div class="card-body jayce-champ">
+              <div class="card-body jayce-champ" onclick="window.location.href = 'jayce.html';">
                 <div class="champ-name-and-city">
                   <p class="card-text champ-name">Jayce Talis</p>
                   <p class="card-text city-name">Piltover</p>
@@ -166,7 +164,7 @@
 
           <div>
             <div class="card character-car-main2">
-              <div class="card-body victor-champ">
+              <div class="card-body victor-champ" onclick="window.location.href = 'Viktor.html';">
                 <div class="champ-name-and-city">
                   <p class="card-text champ-name">Viktor</p>
                   <p class="card-text city-name">Piltover</p>
@@ -178,7 +176,7 @@
 
           <div>
             <div class="card character-car-main2">
-              <div class="card-body cait-champ">
+              <div class="card-body cait-champ" onclick="window.location.href = 'caitlyn.html';">
                 <div class="champ-name-and-city">
                   <p class="card-text champ-name">Caitlyn Kiramman</p>
                   <p class="card-text city-name">Piltover</p>
@@ -203,19 +201,19 @@
 
       <div class="exploring-cards container-fluid px-4">
         <div class="row justify-content-center g-4 cities-container">
-            <div class="piltover-card city-card-home">
+            <div class="piltover-card city-card-home" onclick="window.location.href = 'piltover.html';">
               <div class="city-name-div">
                 <div class="city-name-home"><p>PILTOVER</p></div>
               </div>
               <video class="card-video" src="assets/videos/piltover.webm" autoplay muted loop></video>
             </div>
-            <div class="zaun-card city-card-home">
+            <div class="zaun-card city-card-home" onclick="window.location.href = 'zaun.html';">
               <div class="city-name-div">
                 <div class="city-name-home"><p>ZAUN</p></div>
               </div>
               <video class="card-video" src="assets/videos/zaun.webm" autoplay muted loop></video>
             </div>
-            <div class="noxus-card city-card-home">
+            <div class="noxus-card city-card-home" onclick="window.location.href = 'noxus.html';">
               <div class="city-name-div">
                 <div class="city-name-home"><p>NOXUS</p></div>
               </div>

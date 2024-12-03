@@ -1,7 +1,7 @@
+
 .navbar {
-  cursor: pointer;
   width: 100%;
-  padding: 0.6rem 2rem;
+  padding: 1.6rem 2rem;
   font-family: var(--main-font);
   position: fixed;
   top: 0;
@@ -9,6 +9,7 @@
   right: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  background: var(--bg-gradient);
   border-bottom: solid 1px transparent;
   border-image: linear-gradient(
       90deg,
@@ -17,75 +18,33 @@
       rgba(143, 104, 72, 0) 100%
   ) 1;
   border-image-slice: 1;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
 }
 
-.navbar-nav {
-  gap: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
+@media (min-width: 992px) {
+  .navbar-nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6rem;
+  }
 }
 
-.nav-link {
-  font-size: 1.2rem;
-  margin: 0 0.5rem;
-  color: var(--text-white) !important;
-  transition: color 0.3s ease, transform 0.3s ease-in-out;
+.navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  transform: scale(0.94);
-  color: var(--secondary-color) !important;
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--secondary-color);
 }
 
 .navbar-toggler {
+  filter: invert(1);
   align-self: flex-end;
   border: none;
-  padding: 0;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.toggle-icon {
-  width: 30px;
-  height: 3px;
-  background-color: var(--secondary-color);
-  margin: 6px 0;
-  display: block;
-  transition: 0.3s;
-}
-
-
-
-
-@media (max-width: 991.98px) {
-  .navbar {
-    box-shadow: 0px 0px 20px var(--black);
-
-  }
-
-  .navbar-collapse {
-    background-color: inherit;
-    padding: 1rem;
-    margin-top: 1rem;
-    
-  }
-
-  .navbar-nav {
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
 }

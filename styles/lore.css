@@ -1,9 +1,11 @@
-.lore,
-.lore * {
-  box-sizing: border-box;
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg-color);
 }
+
 .lore {
-  background: #000000;
+  background: var(--bg-color);
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -12,245 +14,76 @@
   min-width: 340px;
   position: relative;
 }
-.hader-container-lore {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 89.51385617256165%
-  );
+
+.header-container-lore {
+  background: url(/assets/images/lore.jpg) center / cover no-repeat;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
   min-height: 850px;
   max-height: 850px;
   position: relative;
 }
-.header-lore {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-.hader-title-lore {
-  color: #ffffff;
+
+.header-title-lore {
+  color: rgb(103, 71, 31);
+  background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98)) text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
+  font-family: var(--main-font);
   font-size: 95px;
   font-weight: 400;
   position: relative;
-  flex: 1;
 }
-.devider-section-container-down {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 100px;
-  max-height: 100px;
-  position: relative;
-}
-.devider-img {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 50px;
-  position: relative;
-  object-fit: cover;
-}
+
+.devider-section-container-down,
 .devider-section-container-up {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
   height: 100px;
   max-height: 100px;
   position: relative;
 }
-.devider-img2 {
-  align-self: stretch;
-  flex-shrink: 0;
+
+.devider-img {
   height: 50px;
-  position: relative;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, -1);
   object-fit: cover;
 }
+
+.devider-img2 {
+  height: 50px;
+  position: relative;
+  transform: rotate(180deg);
+  object-fit: cover;
+}
+
 .intro {
-  background: #000000;
-  padding: 50px 40px 50px 40px;
+  padding: 50px 40px;
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
   position: relative;
 }
-.arcane-league-of-legends-is-an-epic-story-set-in-the-fantastical-world-of-runeterra-focusing-on-the-twin-cities-of-piltover-and-zaun-whose-deep-seated-tensions-drive-much-of-the-conflict-piltover-perched-atop-the-cliffs-is-a-beacon-of-wealth-innovation-and-progress-earning-its-moniker-as-the-city-of-progress-the-city-thrives-on-hextech-a-revolutionary-technology-invented-by-jayce-talis-and-viktor-which-allows-the-safe-manipulation-of-magical-energy-below-piltover-lies-zaun-the-undercity-a-shadowy-industrialized-region-shrouded-in-pollution-and-marked-by-economic-disparity-the-residents-of-zaun-live-under-the-weight-of-piltover-s-dominance-fostering-resentment-and-a-rebellious-spirit-the-story-revolves-around-two-orphaned-sisters-vi-violet-and-jinx-powder-whose-lives-are-forever-altered-by-tragedy-raised-in-zaun-under-the-care-of-vander-a-local-protector-who-dreams-of-peace-between-the-cities-their-world-crumbles-when-a-failed-heist-leads-to-the-death-of-their-family-and-sets-the-sisters-on-divergent-paths-vi-fueled-by-guilt-and-loss-becomes-a-tough-justice-driven-fighter-determined-to-protect-others-from-the-chaos-that-consumed-her-life-jinx-haunted-by-abandonment-and-manipulated-by-silco-a-ruthless-zaunite-crime-lord-spirals-into-madness-and-becomes-a-chaotic-inventor-with-a-penchant-for-destruction-the-conflict-between-piltover-and-zaun-escalates-through-multiple-intertwined-narratives-jayce-a-brilliant-inventor-from-piltover-finds-himself-navigating-the-challenges-of-political-intrigue-and-the-ethical-dilemmas-of-his-hextech-advancements-he-partners-with-viktor-an-idealistic-scientist-from-zaun-whose-deteriorating-health-drives-him-to-desperate-measures-ultimately-leading-him-down-a-path-of-dangerous-experimentation-caitlyn-kiramman-an-elite-piltover-enforcer-from-a-wealthy-family-seeks-justice-for-all-regardless-of-their-origin-and-forms-a-bond-with-vi-that-bridges-the-divide-between-the-cities-amidst-this-backdrop-ekko-a-resourceful-and-ingenious-zaunite-rebel-rises-to-lead-the-firelights-a-group-fighting-to-protect-the-undercity-from-exploitation-and-violence-meanwhile-heimerdinger-a-wise-and-cautious-yordle-scientist-and-council-member-in-piltover-warns-against-the-unrestrained-use-of-hextech-fearing-its-potential-for-devastation-the-tension-between-innovation-and-ethics-progress-and-inequality-drives-much-of-the-narrative-at-the-heart-of-arcane-lies-the-question-of-identity-and-family-the-relationship-between-vi-and-jinx-is-a-poignant-exploration-of-love-betrayal-and-the-scars-of-trauma-vi-struggles-to-save-her-sister-from-silco-s-influence-while-jinx-wrestles-with-her-fractured-psyche-torn-between-her-loyalty-to-silco-and-her-longing-for-her-sister-s-approval-their-conflict-mirrors-the-broader-divide-between-piltover-and-zaun-where-the-struggle-for-power-independence-and-survival-leads-to-devastating-consequences-the-season-builds-toward-a-dramatic-climax-as-jinx-consumed-by-her-insecurities-and-grief-makes-a-fateful-decision-that-threatens-to-ignite-a-full-scale-war-between-piltover-and-zaun-themes-of-corruption-ambition-and-redemption-are-woven-throughout-the-narrative-as-each-character-grapples-with-their-role-in-a-world-teetering-on-the-brink-of-chaos-rooted-in-the-expansive-league-of-legends-universe-arcane-combines-political-intrigue-emotional-depth-and-explosive-action-with-stunning-animation-and-a-compelling-score-it-not-only-explores-the-personal-journeys-of-its-characters-but-also-sets-the-stage-for-larger-conflicts-and-alliances-in-the-world-of-runeterra-offering-fans-and-newcomers-alike-a-deeply-immersive-experience {
+
+.lore-p {
   color: #ffffff;
   text-align: left;
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 32px;
+  font-family: var(--second-font-R);
+  font-size: 1.2rem;
   font-weight: 400;
-  position: relative;
-  flex: 1;
   max-width: 1100px;
 }
-.footer {
-  background: #000000;
-  padding: 20px 0px 20px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  min-height: 180px;
-  position: relative;
-}
-.footer-logo {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 50px;
-  max-height: 50px;
-  position: relative;
-}
-.a {
-  color: #ffac67;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 64px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-nav {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 70px;
-  position: relative;
-}
-.home {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.characters {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 73px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cities {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 41px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.lore2 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.episodes {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 61px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer-copyrights-section {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 30px;
-  max-height: 30px;
-  position: relative;
-}
-.copyrights {
-  color: #ffffff;
-  text-align: center;
-  font-family: "ArcaneNine-Regular", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  position: relative;
-  flex: 1;
-  min-width: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.highlighted {
+  color: var(--main-color);
+  font-family: var(--second-font-B);
+  cursor: pointer;
 }

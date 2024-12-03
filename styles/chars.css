@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.arcane-header {
+    width: 100%;
+    background-image: url(/assets/images/chars.png);
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arcane-title {
+    color: rgb(103, 71, 31);
+    background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98)) text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 95px;
+    font-weight: 400;
+    position: relative;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.search-input {
+    background: rgba(0, 0, 0, 0.46);
+    border: 1px solid #8f6848;
+    color: #ffffff;
+}
+
+
+.character-card {
+    background: #414141;
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 320px;
+    height: 508px;
+    position: relative;
+  }
+
+  
+.character-name {
+    background: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    border-color: #8f6848;
+    border-width: 1px 0px 1px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    max-height: 50px;
+    position: relative;
+  }
